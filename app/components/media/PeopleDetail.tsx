@@ -105,7 +105,7 @@ const PeopleDetail = (props: IPeopleDetailProps) => {
                     hover
                     autoplay={false}
                     speed={0.75}
-                    className="h-7 w-7"
+                    className="size-7"
                     loop
                   />
                 </Link>
@@ -117,7 +117,7 @@ const PeopleDetail = (props: IPeopleDetailProps) => {
                     hover
                     autoplay={false}
                     speed={0.75}
-                    className="h-7 w-7"
+                    className="size-7"
                     loop
                   />
                 </Link>
@@ -129,7 +129,7 @@ const PeopleDetail = (props: IPeopleDetailProps) => {
                     hover
                     autoplay={false}
                     speed={0.75}
-                    className="h-7 w-7"
+                    className="size-7"
                     loop
                   />
                 </Link>
@@ -141,7 +141,7 @@ const PeopleDetail = (props: IPeopleDetailProps) => {
                     hover
                     autoplay={false}
                     speed={0.75}
-                    className="h-7 w-7"
+                    className="size-7"
                     loop
                   />
                 </Link>

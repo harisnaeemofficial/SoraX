@@ -169,7 +169,7 @@ const TvVideosPage = () => {
   };
 
   return (
-    <div className="mt-3 flex w-full max-w-[1920px] flex-col gap-x-0 gap-y-4 px-3 sm:flex-row sm:items-stretch sm:justify-center sm:gap-x-4 sm:gap-y-0 sm:px-3.5 xl:px-4 2xl:px-5">
+    <div className="mt-3 flex w-full max-w-screen-4xl flex-col gap-x-0 gap-y-4 px-3 sm:flex-row sm:items-stretch sm:justify-center sm:gap-x-4 sm:gap-y-0 sm:px-3.5 xl:px-4 2xl:px-5">
       <Tabs
         defaultValue={activeType}
         value={activeType}

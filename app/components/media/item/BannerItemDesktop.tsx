@@ -210,7 +210,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
     <AspectRatio ratio={16 / 8} ref={bannerRef}>
       <Card
         radius="none"
-        className="h-full w-full border-0"
+        className="size-full border-0"
         ref={cardRef}
         role="figure"
         onMouseMove={isShowSpotlight.value ? handleMouseMove : undefined}
@@ -542,7 +542,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
               }}
               className={
                 showTrailer
-                  ? 'relative !-top-[100%] !h-[300%] !w-full overflow-hidden opacity-80'
+                  ? 'relative !-top-full !h-[300%] !w-full overflow-hidden opacity-80'
                   : 'hidden'
               }
             />
@@ -597,7 +597,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
               }}
               className={
                 showTrailer
-                  ? 'relative !-top-[100%] !h-[300%] !w-full overflow-hidden opacity-80'
+                  ? 'relative !-top-full !h-[300%] !w-full overflow-hidden opacity-80'
                   : 'hidden'
               }
             />
@@ -611,7 +611,7 @@ const BannerItemDesktop = (props: IBannerItemDesktopProps) => {
               radius="full"
               variant="ghost"
               isIconOnly
-              className="absolute bottom-20 right-[85px] z-[90] h-11 w-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
+              className="absolute bottom-20 right-[85px] z-[90] size-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
               aria-label="Toggle Mute"
               onPress={isMutedTrailer.value ? unMute : mute}
             >

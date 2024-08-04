@@ -190,7 +190,7 @@ export const MediaDetail = (props: IMediaDetail) => {
           className="z-1 absolute bottom-0 flex grow flex-col items-center justify-center p-0"
         >
           <div className={backgroundStyles({ content: true })} />
-          <div className="grid w-full max-w-[1920px] grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
+          <div className="grid w-full max-w-screen-4xl grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
             <div className="flex flex-col items-center justify-center grid-in-image" ref={imageRef}>
               {posterPath ? (
                 <Image
@@ -464,7 +464,7 @@ export const AnimeDetail = (props: IAnimeDetail) => {
           className="z-1 absolute bottom-0 flex grow flex-col justify-center p-0"
         >
           <div className={backgroundStyles({ content: true })} />
-          <div className="grid w-full max-w-[1920px] grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
+          <div className="grid w-full max-w-screen-4xl grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
             <div className="flex flex-col items-center justify-center grid-in-image" ref={imageRef}>
               {image ? (
                 <Image

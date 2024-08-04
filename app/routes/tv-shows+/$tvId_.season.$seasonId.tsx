@@ -225,7 +225,7 @@ const TvSeasonDetail = () => {
           className="absolute bottom-0 z-10 flex grow flex-col justify-center rounded-b-none p-0"
         >
           <div className={backgroundStyles({ content: true })} />
-          <div className="grid w-full max-w-[1920px] grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pb-8 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
+          <div className="grid w-full max-w-screen-4xl grid-cols-[1fr_2fr] grid-rows-[1fr_auto_auto] items-stretch justify-center gap-x-4 gap-y-6 px-3 pb-8 pt-5 grid-areas-small sm:grid-rows-[auto_1fr_auto] sm:px-3.5 sm:grid-areas-wide xl:px-4 2xl:px-5">
             <div className="flex flex-col items-center justify-center grid-in-image" ref={imageRef}>
               {seasonDetail?.poster_path ? (
                 <Image
@@ -286,7 +286,7 @@ const TvSeasonDetail = () => {
             // @ts-ignore
             '--theme-movie-brand': isHydrated ? backgroundColor : 'transparent',
           }}
-          className="absolute bottom-0 p-0 after:absolute after:bottom-0 after:h-full after:w-full after:bg-gradient-to-t after:from-movie-brand-color after:to-transparent after:content-['']"
+          className="absolute bottom-0 p-0 after:absolute after:bottom-0 after:size-full after:bg-gradient-to-t after:from-movie-brand-color after:to-transparent after:content-['']"
         >
           <Image
             src={

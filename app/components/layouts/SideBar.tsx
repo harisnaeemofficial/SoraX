@@ -384,7 +384,7 @@ const SideBar = () => {
                       >
                         {({ isActive, isPending }) => (
                           <>
-                            <Search className="mr-2 h-5 w-5" filled={isActive} />
+                            <Search className="mr-2 size-5" filled={isActive} />
                             {t('search-movies')}
                             <Spinner
                               size="sm"
@@ -408,7 +408,7 @@ const SideBar = () => {
                       >
                         {({ isActive, isPending }) => (
                           <>
-                            <Search className="mr-2 h-5 w-5" filled={isActive} />
+                            <Search className="mr-2 size-5" filled={isActive} />
                             {t('search-tv-shows')}
                             <Spinner
                               size="sm"
@@ -432,7 +432,7 @@ const SideBar = () => {
                       >
                         {({ isActive, isPending }) => (
                           <>
-                            <Search className="mr-2 h-5 w-5" filled={isActive} />
+                            <Search className="mr-2 size-5" filled={isActive} />
                             {t('search-anime')}
                             <Spinner
                               size="sm"
@@ -456,7 +456,7 @@ const SideBar = () => {
                       >
                         {({ isActive, isPending }) => (
                           <>
-                            <Search className="mr-2 h-5 w-5" filled={isActive} />
+                            <Search className="mr-2 size-5" filled={isActive} />
                             {t('search-people')}
                             <Spinner
                               size="sm"
@@ -545,7 +545,7 @@ const SideBar = () => {
                           }}
                         />
                       </CardBody>
-                      <CardFooter className="absolute bottom-0 z-[10] justify-start bg-default/60 backdrop-blur-sm">
+                      <CardFooter className="absolute bottom-0 z-10 justify-start bg-default/60 backdrop-blur-sm">
                         <h4 className="text-default-foreground">{t('movies-footer')}</h4>
                       </CardFooter>
                     </Card>
@@ -562,7 +562,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('movies-popular')}
                               <Spinner
                                 size="sm"
@@ -591,7 +591,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('movies-now-playing')}
                               <Spinner
                                 size="sm"
@@ -620,7 +620,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('movies-upcoming')}
                               <Spinner
                                 size="sm"
@@ -649,7 +649,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('movies-top-rated')}
                               <Spinner
                                 size="sm"
@@ -742,7 +742,7 @@ const SideBar = () => {
                           }}
                         />
                       </CardBody>
-                      <CardFooter className="absolute bottom-0 z-[10] justify-start bg-default/60 backdrop-blur-sm">
+                      <CardFooter className="absolute bottom-0 z-10 justify-start bg-default/60 backdrop-blur-sm">
                         <h4 className="text-default-foreground">{t('tv-shows-footer')}</h4>
                       </CardFooter>
                     </Card>
@@ -759,7 +759,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('tv-shows-popular')}
                               <Spinner
                                 size="sm"
@@ -788,7 +788,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('tv-shows-airing-today')}
                               <Spinner
                                 size="sm"
@@ -817,7 +817,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('tv-shows-on-the-air')}
                               <Spinner
                                 size="sm"
@@ -846,7 +846,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('tv-shows-top-rated')}
                               <Spinner
                                 size="sm"
@@ -939,7 +939,7 @@ const SideBar = () => {
                           }}
                         />
                       </CardBody>
-                      <CardFooter className="absolute bottom-0 z-[10] justify-start bg-default/60 backdrop-blur-sm">
+                      <CardFooter className="absolute bottom-0 z-10 justify-start bg-default/60 backdrop-blur-sm">
                         <h4 className="text-default-foreground">{t('anime-footer')}</h4>
                       </CardFooter>
                     </Card>
@@ -956,7 +956,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('anime-popular')}
                               <Spinner
                                 size="sm"
@@ -985,7 +985,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('anime-trending')}
                               <Spinner
                                 size="sm"
@@ -1014,7 +1014,7 @@ const SideBar = () => {
                         {({ isActive, isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" filled={isActive} />
+                              <Discover className="mr-2 size-5" filled={isActive} />
                               {t('anime-recent-episodes')}
                               <Spinner
                                 size="sm"
@@ -1043,7 +1043,7 @@ const SideBar = () => {
                         {({ isPending }) => (
                           <>
                             <div className="mb-2 flex w-full flex-row items-center justify-start">
-                              <Discover className="mr-2 h-5 w-5" />
+                              <Discover className="mr-2 size-5" />
                               {t('anime-random')}
                               <Spinner
                                 size="sm"

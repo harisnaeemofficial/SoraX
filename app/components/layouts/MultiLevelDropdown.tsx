@@ -361,7 +361,7 @@ const MultiLevelDropdown = (props: IMultiLevelDropdownProps) => {
           radius="full"
           aria-label="dropdown"
           isIconOnly
-          className="h-9 w-9"
+          className="size-9"
           size="sm"
         >
           <Player
@@ -372,7 +372,7 @@ const MultiLevelDropdown = (props: IMultiLevelDropdownProps) => {
             autoplay={false}
             keepLastFrame
             speed={2.7}
-            className="lottie-color h-6 w-6"
+            className="lottie-color size-6"
           />
         </Button>
       </PopoverTrigger>

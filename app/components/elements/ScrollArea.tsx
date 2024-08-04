@@ -22,7 +22,7 @@ const ScrollViewport = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaViewport>
 >(({ className, children, ...props }, ref) => (
   <ScrollAreaPrimitive.ScrollAreaViewport
-    className={cn('h-full w-full rounded-[inherit]', className)}
+    className={cn('size-full rounded-[inherit]', className)}
     ref={ref}
     {...props}
   >
@@ -32,7 +32,7 @@ const ScrollViewport = React.forwardRef<
 ScrollViewport.displayName = ScrollAreaPrimitive.ScrollAreaViewport.displayName;
 
 const scrollbarStyles = tv({
-  base: 'z-[9999] flex touch-none select-none p-[1px]',
+  base: 'z-[9999] flex touch-none select-none p-px',
   variants: {
     orientation: {
       vertical: 'h-full w-[7px]',

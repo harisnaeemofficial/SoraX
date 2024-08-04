@@ -17,7 +17,7 @@ interface IHeaderProps {
 }
 
 const headerStyles = tv({
-  base: 'fixed z-[1000] hidden h-[64px] w-[100vw] flex-row items-center justify-between gap-x-4 px-5 py-3 sm:flex',
+  base: 'fixed z-[1000] hidden h-[64px] w-screen flex-row items-center justify-between gap-x-4 px-5 py-3 sm:flex',
   variants: {
     miniSidebar: {
       true: 'top-0 sm:w-[calc(100vw_-_80px)]',
@@ -26,7 +26,7 @@ const headerStyles = tv({
       true: 'top-[15px] sm:w-[calc(100vw_-_282px)]',
     },
     hideSidebar: {
-      true: 'top-0 sm:w-[100vw]',
+      true: 'top-0 sm:w-screen',
     },
   },
   compoundVariants: [
@@ -172,7 +172,7 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
         }}
       >
         {customHeaderBackgroundColor ? (
-          <div className="pointer-events-none h-full w-full bg-background/[0.2]" />
+          <div className="pointer-events-none size-full bg-background/[0.2]" />
         ) : null}
       </motion.div>
       <ControlNavigation />

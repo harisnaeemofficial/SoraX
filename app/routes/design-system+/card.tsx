@@ -134,7 +134,7 @@ const CardPage = () => {
         </CardHeader>
         <img
           alt="Card example background"
-          className="h-full w-full -translate-y-10 scale-125 object-cover"
+          className="size-full -translate-y-10 scale-125 object-cover"
           src="https://nextui.org/images/card-example-6.jpeg"
         />
         <CardFooter className="absolute bottom-0 z-10 justify-between border-t border-slate-300 bg-white/30">

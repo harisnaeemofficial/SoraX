@@ -436,7 +436,7 @@ const Settings = () => {
       animate={{ x: '0', opacity: 1 }}
       exit={{ y: '-10%', opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="flex w-full max-w-screen-4xl flex-col justify-start py-3 sm:py-0"
+      className="flex w-full max-w-screen-nextui-xl flex-col justify-start py-3 sm:py-0"
     >
       <h2>{t('settings')}</h2>
       <Spacer y={2.5} />

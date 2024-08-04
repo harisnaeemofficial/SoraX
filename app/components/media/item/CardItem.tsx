@@ -67,16 +67,16 @@ const cardItemStyles = tv({
       card: {
         base: '!w-[164px] sm:!w-[180px] md:!w-[200px] lg:!w-[244px] xl:!w-[264px]',
         body: 'aspect-[2/3] w-full overflow-hidden p-0',
-        imageContainer: 'h-full w-full focus:outline-none',
+        imageContainer: 'size-full focus:outline-none',
         image: 'z-0 aspect-[2/3] !min-h-[auto] !min-w-[auto] !transition-[transform,_opacity]',
         footer:
           'flex min-h-[4.875rem] max-w-[164px] flex-col items-start justify-start focus:outline-none focus:ring-2 focus:ring-inset focus:ring-focus sm:max-w-[210px] md:max-w-[200px] lg:max-w-[244px] xl:max-w-[264px]',
       },
       detail: {
         base: '!w-full sm:!w-[480px]',
-        body: 'flex !h-[174px] w-full !flex-row !overflow-hidden p-0 sm:aspect-[5/3] sm:!h-[auto]',
+        body: 'flex !h-[174px] w-full !flex-row !overflow-hidden p-0 sm:aspect-[5/3] sm:!h-auto',
         imageContainer: 'w-[116px] focus:outline-none sm:w-2/5',
-        image: 'z-0 !h-[174px] !min-h-[auto] !min-w-[116px] sm:aspect-[2/3] sm:!h-[auto]',
+        image: 'z-0 !h-[174px] !min-h-[auto] !min-w-[116px] sm:aspect-[2/3] sm:!h-auto',
         content: 'flex grow flex-col gap-y-4 p-3 sm:w-3/5',
         footer:
           'absolute bottom-0 flex !w-[116px] justify-center border-t border-divider bg-background/[0.6] backdrop-blur-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-focus sm:!w-2/5',
@@ -100,7 +100,7 @@ const cardItemStyles = tv({
       people: {
         base: '!w-[164px]',
         body: 'aspect-[2/3] w-full overflow-hidden p-0',
-        imageContainer: 'h-full w-full focus:outline-none',
+        imageContainer: 'size-full focus:outline-none',
         image:
           'z-0 aspect-[2/3] !min-h-[auto] !min-w-[auto] overflow-hidden !transition-[transform,_opacity]',
         footer:
@@ -290,7 +290,7 @@ const CardItem = (props: ICardItemProps) => {
                 ]}
               />
             ) : (
-              <div className="z-0 flex aspect-[2/3] h-full w-full items-center justify-center rounded-large bg-default">
+              <div className="z-0 flex aspect-[2/3] size-full items-center justify-center rounded-large bg-default">
                 <PhotoIcon width={48} height={48} />
               </div>
             )

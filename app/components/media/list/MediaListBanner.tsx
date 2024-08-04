@@ -44,7 +44,7 @@ const CustomNavigation = forwardRef<HTMLDivElement, { slot: 'container-end' }>(
               swiper.autoplay.stop();
             }
           }}
-          className="absolute bottom-20 right-[35px] z-[90] h-11 w-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
+          className="absolute bottom-20 right-[35px] z-[90] size-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
           aria-label="Play Trailer"
         >
           {isPlayTrailer.value ? (
@@ -61,7 +61,7 @@ const CustomNavigation = forwardRef<HTMLDivElement, { slot: 'container-end' }>(
             variant="ghost"
             isIconOnly
             onPress={() => swiper.slidePrev()}
-            className="absolute bottom-[10px] right-[85px] z-[90] h-11 w-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
+            className="absolute bottom-[10px] right-[85px] z-[90] size-11 cursor-pointer hover:opacity-80 2xl:bottom-[200px]"
             aria-label="Previous"
             disabled={slideProgress === 0}
           >
@@ -74,14 +74,14 @@ const CustomNavigation = forwardRef<HTMLDivElement, { slot: 'container-end' }>(
             variant="ghost"
             isIconOnly
             onPress={() => swiper.slideNext()}
-            className="absolute bottom-[10px] right-[35px] z-[90] h-11 w-11 cursor-pointer hover:opacity-80"
+            className="absolute bottom-[10px] right-[35px] z-[90] size-11 cursor-pointer hover:opacity-80"
             aria-label="Next"
             disabled={slideProgress === 1}
           >
             <ChevronRightIcon fill="currentColor" />
           </Button>
           <div
-            className="absolute bottom-[150px] right-[35px] z-[90] flex h-12 w-12 items-center justify-center text-default-foreground 2xl:bottom-[270px]"
+            className="absolute bottom-[150px] right-[35px] z-[90] flex size-12 items-center justify-center text-default-foreground 2xl:bottom-[270px]"
             ref={forwardedRef}
           >
             <svg
@@ -92,7 +92,7 @@ const CustomNavigation = forwardRef<HTMLDivElement, { slot: 'container-end' }>(
                 strokeDashoffset: 'calc(125.6 * (var(--progress)))',
                 strokeDasharray: '125.6',
               }}
-              className="absolute left-0 top-0 z-10 h-full w-full rotate-90 fill-none stroke-default stroke-2"
+              className="absolute left-0 top-0 z-10 size-full rotate-90 fill-none stroke-default stroke-2"
             >
               <circle cx="24" cy="24" r="20" />
             </svg>
@@ -173,7 +173,7 @@ const MediaListBanner = (props: IMediaListBannerProps) => {
   }, [isPlayTrailer.value, isXl]);
 
   return (
-    <section className="relative m-0 box-border flex h-full w-full max-w-screen-4xl flex-wrap items-center justify-center p-0">
+    <section className="relative m-0 box-border flex size-full max-w-screen-nextui-xl flex-wrap items-center justify-center p-0">
       {items && items?.length > 0 && (
         <>
           <SwiperReact

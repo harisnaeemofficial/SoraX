@@ -36,7 +36,7 @@ const ToastPage = () => {
         onPress={() =>
           toast('This is a toast', {
             description: 'This is a toast description',
-            icon: <Info className="h-5 w-5" />,
+            icon: <Info className="size-5" />,
             duration: Infinity,
           })
         }

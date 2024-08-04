@@ -99,7 +99,7 @@ const BannerItemCompact = forwardRef<HTMLDivElement, IBannerItemCompactProps>(
             </CardFooter>
           </Card>
         ) : (
-          <Skeleton className="h-full w-full" />
+          <Skeleton className="size-full" />
         )}
         {active && !isPlayTrailer.value ? (
           <div className="absolute bottom-0 z-20 h-[10px] w-full overflow-hidden">

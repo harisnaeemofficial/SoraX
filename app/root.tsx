@@ -511,9 +511,9 @@ const App = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="fixed left-0 top-0 z-[9999] block h-full w-full bg-background"
+                className="fixed left-0 top-0 z-[9999] block size-full bg-background"
               >
-                <div className="relative top-1/2 m-auto mt-[-77px] block h-0 w-0">
+                <div className="relative top-1/2 m-auto mt-[-77px] block size-0">
                   <div className="mb-5 flex	items-center justify-center">
                     <Image
                       width="100px"
@@ -540,8 +540,8 @@ const App = () => {
                       SORA
                     </h1>
                   </div>
-                  <div className="h-9 w-9 animate-spin">
-                    <div className="h-full w-full rounded-[50%] border-4 border-y-primary" />
+                  <div className="size-9 animate-spin">
+                    <div className="size-full rounded-[50%] border-4 border-y-primary" />
                   </div>
                 </div>
               </motion.div>

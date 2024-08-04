@@ -23,7 +23,7 @@ const SelectTrigger = React.forwardRef<
       className,
       children,
       selectIcon = (
-        <ChevronDown className="h-4 w-4 opacity-50 transition duration-200 group-data-[state=open]:rotate-180" />
+        <ChevronDown className="size-4 opacity-50 transition duration-200 group-data-[state=open]:rotate-180" />
       ),
       ...props
     },
@@ -60,7 +60,7 @@ const SelectContent = React.forwardRef<
       <SelectPrimitive.Content
         ref={ref}
         className={cn(
-          'relative z-[9999] min-w-[8rem] overflow-hidden rounded-medium border border-divider bg-content1 text-default-foreground shadow-xl shadow-default/10  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
+          'relative z-[9999] min-w-32 overflow-hidden rounded-medium border border-divider bg-content1 text-default-foreground shadow-xl shadow-default/10  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2',
           position === 'popper'
             ? 'data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1'
             : '!p-1.5',
@@ -72,7 +72,7 @@ const SelectContent = React.forwardRef<
       >
         {position === 'item-aligned' ? (
           <SelectPrimitive.ScrollUpButton className="flex h-6 cursor-default items-center justify-center bg-content1 text-default-foreground">
-            <ChevronUp className="h-4 w-4" />
+            <ChevronUp className="size-4" />
           </SelectPrimitive.ScrollUpButton>
         ) : null}
         <SelectPrimitive.Viewport
@@ -87,7 +87,7 @@ const SelectContent = React.forwardRef<
         </SelectPrimitive.Viewport>
         {position === 'item-aligned' ? (
           <SelectPrimitive.ScrollDownButton className="flex h-6 cursor-default items-center justify-center bg-content1 text-default-foreground">
-            <ChevronDown className="h-4 w-4" />
+            <ChevronDown className="size-4" />
           </SelectPrimitive.ScrollDownButton>
         ) : null}
       </SelectPrimitive.Content>
@@ -120,9 +120,9 @@ const SelectItem = React.forwardRef<
     )}
     {...props}
   >
-    <span className="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+    <span className="absolute left-2 flex size-3.5 items-center justify-center">
       <SelectPrimitive.ItemIndicator>
-        <Tick className="h-4 w-4" />
+        <Tick className="size-4" />
       </SelectPrimitive.ItemIndicator>
     </span>
 

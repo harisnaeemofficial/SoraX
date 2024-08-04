@@ -90,7 +90,7 @@ const NavigationMenuTrigger = forwardRef<
     {children}{' '}
     {showArrow ? (
       <ChevronRight
-        className="relative top-[1px] ml-auto h-5 w-5 transition duration-400 group-data-[state=open]:rotate-180"
+        className="relative top-px ml-auto size-5 transition duration-400 group-data-[state=open]:rotate-180"
         aria-hidden="true"
       />
     ) : null}
@@ -136,7 +136,7 @@ const NavigationMenuIndicator = forwardRef<
     className={navigationMenuIndicatorStyle({ class: className })}
     {...props}
   >
-    <div className="relative top-[60%] h-2 w-2 rotate-45 rounded-tl-small bg-slate-200 shadow-md dark:bg-slate-800" />
+    <div className="relative top-[60%] size-2 rotate-45 rounded-tl-small bg-slate-200 shadow-md dark:bg-slate-800" />
   </NavigationMenuPrimitive.Indicator>
 ));
 NavigationMenuIndicator.displayName = NavigationMenuPrimitive.Indicator.displayName;

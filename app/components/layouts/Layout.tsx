@@ -94,7 +94,7 @@ const contentAreaStyles = tv({
 });
 
 const scrollAreaViewportStyles = tv({
-  base: 'flex w-[100vw] flex-col items-center justify-start transition-[width,_height] duration-200',
+  base: 'flex w-screen flex-col items-center justify-start transition-[width,_height] duration-200',
   variants: {
     mini: {
       true: 'min-h-[calc(100vh_-_1px)] sm:w-[calc(100vw_-_80px)]',
@@ -111,7 +111,7 @@ const scrollAreaViewportStyles = tv({
       false: 'mt-[72px]',
     },
     hideSidebar: {
-      true: 'min-h-[calc(100vh_-_1px)] sm:w-[100vw]',
+      true: 'min-h-[calc(100vh_-_1px)] sm:w-screen',
     },
   },
   compoundVariants: [
@@ -155,7 +155,7 @@ const scrollAreaViewportStyles = tv({
 });
 
 const tabLinkWrapperStyles = tv({
-  base: 'fixed z-[1000] flex h-[56px] w-[100vw] items-end shadow-md shadow-default/10',
+  base: 'fixed z-[1000] flex h-[56px] w-screen items-end shadow-md shadow-default/10',
   variants: {
     miniSidebar: {
       true: 'top-[56px] sm:w-[calc(100vw_-_80px)]',
@@ -164,7 +164,7 @@ const tabLinkWrapperStyles = tv({
       true: 'top-[71px] sm:w-[calc(100vw_-_280px)]',
     },
     hideSidebar: {
-      true: 'top-[56px] sm:w-[100vw]',
+      true: 'top-[56px] sm:w-screen',
     },
   },
   compoundVariants: [

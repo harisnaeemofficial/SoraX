@@ -956,11 +956,11 @@ const GlobalPlayer = () => {
       </AnimatePresence>
       {/* Creating portal for the player layers */}
       {isMini && artplayer
-        ? createPortal(<div className="z-[1] h-full w-full" />, artplayer.layers.mask)
+        ? createPortal(<div className="z-[1] size-full" />, artplayer.layers.mask)
         : null}
       {isMini && artplayer
         ? createPortal(
-            <div className="flex h-full w-full flex-row items-center justify-center">
+            <div className="flex size-full flex-row items-center justify-center">
               <Tooltip content={isPlayerPlaying ? 'Pause' : 'Play'} showArrow closeDelay={0}>
                 <Button
                   type="button"
@@ -1089,9 +1089,6 @@ const GlobalPlayer = () => {
               <div className="flex w-2/3 shrink grow-0 basis-2/3 flex-row items-center justify-start gap-x-2">
                 {isPlayerFullScreen ? (
                   <div className="flex w-full flex-col items-start justify-center">
-                    <h6 className="w-full truncate text-start !text-default-foreground">
-                      {playerData?.titlePlayer}
-                    </h6>
                     <p className="!text-default-foreground/80">
                       {seasonId ? ` Season ${seasonId}` : ''}
                       {episodeId ? ` Episode ${episodeId}` : ''}

@@ -2,6 +2,7 @@ import type { Dispatch, SetStateAction } from 'react';
 import type Artplayer from 'artplayer';
 
 function PlayerHotKey(art: Artplayer, setShowSubtitle: Dispatch<SetStateAction<boolean>>) {
+  
   // https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
   // art.hotkey.add(109, () => {
   //   // NumpadSubtract

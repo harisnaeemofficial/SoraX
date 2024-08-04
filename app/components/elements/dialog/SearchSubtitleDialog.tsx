@@ -282,7 +282,7 @@ const SearchSubtitles = (props: ISearchSubtitlesProps) => {
               // shadow
               onChange={handlePageChange}
               {...(isSm && { size: 'sm' })}
-              className="[&>*]:!mx-[0.125rem] sm:[&>*]:!mx-1"
+              className="[&>*]:!mx-0.5 sm:[&>*]:!mx-1"
             />
           </div>
         ) : null}

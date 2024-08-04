@@ -24,7 +24,6 @@ export const playerStyles = tv({
     '[&_.art-subtitle]:bg-player-subtitle-window-color',
     '[&_.art-subtitle]:!text-shadow-player',
     '[&_.art-bottom]:!bg-gradient-to-b',
-    '[&_.art-bottom]:from-transparent',
     '[&_.art-control-topControlButtons]:!opacity-100',
     '[&_.art-control-topControlButtons]:before:absolute',
     '[&_.art-control-topControlButtons]:before:left-0',
@@ -32,7 +31,6 @@ export const playerStyles = tv({
     '[&_.art-control-topControlButtons]:before:h-[100px]',
     '[&_.art-control-topControlButtons]:before:w-full',
     '[&_.art-control-topControlButtons]:before:bg-gradient-to-t',
-    '[&_.art-control-topControlButtons]:before:from-transparent',
     '[&_.art-control-topControlButtons]:before:bg-top',
     '[&_.art-control-topControlButtons]:before:bg-repeat-x',
     "[&_.art-control-topControlButtons]:before:content-['']",
@@ -72,7 +70,7 @@ export const playerStyles = tv({
         '[&_.art-progress]:!transform-none',
         '[&_.art-subtitle]:!bottom-[7px]',
       ],
-      false: 'h-full w-full rounded-none',
+      false: 'size-full rounded-none',
     },
     isMobile: {
       true: [

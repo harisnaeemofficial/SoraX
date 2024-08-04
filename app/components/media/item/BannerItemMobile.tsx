@@ -54,7 +54,7 @@ const BannerItemMobile = (props: IBannerItemMobileProps) => {
         ref={cardRef}
         shadow="none"
         isPressable
-        className={`h-full w-full rounded-b-none border-0 !transition-[margin,_transform,_background] !duration-300 !ease-in ${
+        className={`size-full rounded-b-none border-0 !transition-[margin,_transform,_background] !duration-300 !ease-in ${
           !active ? 'mt-6' : ''
         }`}
       >

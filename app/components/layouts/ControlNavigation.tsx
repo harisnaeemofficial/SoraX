@@ -52,7 +52,7 @@ const ControlNavigation = () => {
         isIconOnly
         onPress={() => handleNavigationBackForward('back')}
         isDisabled={historyBack.length <= 1}
-        className="h-9 w-9"
+        className="size-9"
         size="sm"
       >
         <ChevronLeft />
@@ -63,7 +63,7 @@ const ControlNavigation = () => {
         isIconOnly
         onPress={() => handleNavigationBackForward('forward')}
         isDisabled={historyForward.length <= 1}
-        className="h-9 w-9"
+        className="size-9"
         size="sm"
       >
         <ChevronRight />

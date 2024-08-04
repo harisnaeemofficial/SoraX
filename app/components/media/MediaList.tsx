@@ -176,6 +176,7 @@ interface IMediaListProps {
    * @example
    * 'Gogo'
    * 'Zoro'
+   * ''
    */
   provider?: string;
   /**
@@ -390,7 +391,7 @@ const MediaList = (props: IMediaListProps) => {
                         size="md"
                         radius="lg"
                         isIconOnly
-                        className="h-10 min-w-[2.5rem]"
+                        className="h-10 min-w-10"
                         variant="ghost"
                       >
                         <FilterIcon />
@@ -423,7 +424,7 @@ const MediaList = (props: IMediaListProps) => {
                 >
                   <SelectTrigger
                     aria-label="Select Sort"
-                    selectIcon={<Sort className="h-4 w-4 opacity-50" />}
+                    selectIcon={<Sort className="size-4 opacity-50" />}
                   >
                     <SelectValue placeholder={t('sort-by')} />
                   </SelectTrigger>
@@ -459,7 +460,7 @@ const MediaList = (props: IMediaListProps) => {
                 radius="full"
                 variant="solid"
                 ref={(node) => setPrevEl(node)}
-                className="h-8 p-0 hover:opacity-80 sm:h-10 sm:w-10"
+                className="h-8 p-0 hover:opacity-80 sm:size-10"
                 aria-label="Previous"
                 isDisabled={slideProgress === 0}
                 isIconOnly
@@ -471,7 +472,7 @@ const MediaList = (props: IMediaListProps) => {
                 radius="full"
                 variant="solid"
                 ref={(node) => setNextEl(node)}
-                className="h-8 p-0 hover:opacity-80 sm:h-10 sm:w-10"
+                className="h-8 p-0 hover:opacity-80 sm:size-10"
                 aria-label="Next"
                 isDisabled={slideProgress === 1}
                 isIconOnly

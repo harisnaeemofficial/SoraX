@@ -25,7 +25,7 @@ export const Breadcrumb = React.forwardRef<HTMLElement, BreadcrumbProps>(
     {
       children,
       className,
-      separator = <ChevronRight className="h-4 w-4" />,
+      separator = <ChevronRight className="size-4" />,
       addSeparator = true,
       ...props
     },
