@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@consumet/extensions':
-        specifier: github:consumet/consumet.ts
-        version: https://codeload.github.com/consumet/consumet.ts/tar.gz/83debeccccfef316d1c43a71223b9ac841a60ed7
+        specifier: github:moonpic/consumet.ts
+        version: https://codeload.github.com/moonpic/consumet.ts/tar.gz/6f7863f0ded67751177d6909c6b3b2dc9e6fb5a2
       '@epic-web/cachified':
         specifier: ^5.2.0
         version: 5.2.0
@@ -632,8 +632,8 @@ packages:
   '@cloudflare/kv-asset-handler@0.2.0':
     resolution: {integrity: sha512-MVbXLbTcAotOPUj0pAMhVtJ+3/kFkwJqc5qNOleOZTv6QkZZABDMS21dSrSlVswEHwrpWC03e4fWytjqKvuE2A==}
 
-  '@consumet/extensions@https://codeload.github.com/consumet/consumet.ts/tar.gz/83debeccccfef316d1c43a71223b9ac841a60ed7':
-    resolution: {tarball: https://codeload.github.com/consumet/consumet.ts/tar.gz/83debeccccfef316d1c43a71223b9ac841a60ed7}
+  '@consumet/extensions@https://codeload.github.com/moonpic/consumet.ts/tar.gz/6f7863f0ded67751177d6909c6b3b2dc9e6fb5a2':
+    resolution: {tarball: https://codeload.github.com/moonpic/consumet.ts/tar.gz/6f7863f0ded67751177d6909c6b3b2dc9e6fb5a2}
     version: 1.7.0
 
   '@emnapi/runtime@1.2.0':
@@ -7693,7 +7693,7 @@ snapshots:
     dependencies:
       mime: 3.0.0
 
-  '@consumet/extensions@https://codeload.github.com/consumet/consumet.ts/tar.gz/83debeccccfef316d1c43a71223b9ac841a60ed7':
+  '@consumet/extensions@https://codeload.github.com/moonpic/consumet.ts/tar.gz/6f7863f0ded67751177d6909c6b3b2dc9e6fb5a2':
     dependencies:
       ascii-url-encoder: 1.2.0
       axios: 0.27.2
