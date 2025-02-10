@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@consumet/extensions':
         specifier: github:consumet/consumet.ts
-        version:   https://codeload.github.com/consumet/consumet.ts/tar.gz/6f7863f0ded67751177d6909c6b3b2dc9e6fb5a2
+        version:   github.com/consumet/consumet.ts/83debeccccfef316d1c43a71223b9ac841a60ed7
       '@epic-web/cachified':
         specifier: ^5.2.0
         version: 5.2.0
