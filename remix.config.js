@@ -42,8 +42,8 @@ module.exports = {
   //
   // Remix PWA Settings
   //
-  entryWorkerFile: 'app/entry.worker.ts',
-  worker: '@remix-pwa/worker-runtime',
+  //entryWorkerFile: 'app/entry.worker.ts',
+  //worker: '@remix-pwa/worker-runtime',
   workerName: 'sw',
   workerMinify: true,
   //workerBuildDirectory: './build',
